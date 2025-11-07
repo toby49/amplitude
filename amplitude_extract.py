@@ -20,17 +20,15 @@ params = {
 # Make the GET request with basic authentication
 response = requests.get(url, params=params, auth=(api_key, api_secret))
 
-# # Check the response status
-# if response.status_code == 200:
-#     # The request was successful
-#     data = response.content 
-#     print('Data retrieved successfully.')
-#     # JSON data files saved to a zip folder 'data.zip'
-#     with open('data/data.zip', 'wb') as file:
-#         file.write(data)
-# else:
-#     # The request failed; print the error
-#     print(f'Error {response.status_code}: {response.text}')
+# Check the response status
+if response.status_code == 200:
+    # The request was successful
+    data = response.content 
+    print('Data retrieved successfully.')
+    # JSON data files saved to a zip folder 'data.zip'
+    with open('data/data.zip', 'wb') as file:
+        file.write(data)
+else:
+    # The request failed; print the error
+    print(f'Error {response.status_code}: {response.text}')
 
-data = response.content 
-print(data)
