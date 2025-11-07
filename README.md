@@ -19,5 +19,5 @@ This project extracts behavioral event data from **Amplitude**, our website anal
 
 ## 🗂️ Extraction Architecture
 
-*(Insert diagram placeholder — e.g. Data flow: Amplitude → API / Airbyte → Azure Blob)*
+![Architecture Diagram](https://github.com/toby49/amplitude/blob/main/images/Screenshot%202025-11-07%20095622.png)
 
